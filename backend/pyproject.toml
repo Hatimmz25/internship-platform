@@ -1,0 +1,5 @@
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests", "scraper/tests"]
+pythonpath = [".", "scraper"]
+python_files = ["test_*.py"]

@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+      lang="fr">
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="title" content=" 140 - Integration of neural networks in industrial process control adaptation logic of a run-out table controller for hot strip mills" />
+<meta name="robots" content="index, follow" />
+<meta name="description" content="Reference Offre 140
+
+&amp;nbsp;
+
+The hot strip mill is the process where a hot-rolled coil is produced from a slab after being rolled multiple times in the rolling stands and then cooled with water using a run-out table to control the shape and the mechanical properties of the strip.
+A run-out table is key process in hot rolling composed of water jets controlled by multiple valves to reach a desired temperature along the length of the product. R&amp;amp;D developed an industrial water-cooling controller for run-out table based on temperature and metallurgical predictions.
+
+Temperature control is a key challenge in such manufacturing processes, where product quality strongly depends on the ability to accurately predict and regulate thermal behaviour under a wide range of operating conditions.
+
+Current run out table control systems rely on physical and mathematical models to predict process behaviour and determine optimal operating parameters. While these models provide robust and accurate predictions in most situations, their performance may decrease when operating outside their calibration domain or when confronted with atypical process conditions.
+
+The objective of this internship is to investigate and develop a hybrid modelling approach combining physical models and neural networks to improve the adaptation capabilities of the run out table controller. The work will consist in leveraging historical process data and existing adaptation mechanisms to enhance prediction accuracy and controller performance while maintaining the robustness required for industrial deployment.
+
+The activities of the mission will include:
+
+- Understanding the industrial process and the existing control strategy.
+- Reviewing state-of-the-art machine learning approaches for industrial applications.
+- Analysing historical process and production data.
+- Developing and training neural network models in Python.
+- Reusing and extending existing adaptation algorithms.
+- Integrating machine learning models into the control adaptation workflow.
+- Evaluating model performance through offline simulations and industrial case studies.
+- Comparing conventional physical-model-based and hybrid AI-based approaches.
+- Documenting developments and presenting results to the R&amp;amp;D team.
+
+The training will be provided by a team of technicians and engineers in Maizi&amp;egrave;res lab. Some contacts with ArcelorMittal Hot Strip Mills could be requested to gather information.
+
+The language of everyday communication is in French but reports and presentations will be in English. The internship offers the opportunity to combine data science, software development and industrial process understanding on a real-world application.
+" />
+<meta name="keywords" content="abg docteur emploi these universités entreprises" />
+<meta name="language" content="fr, en" />
+    <meta name="viewport" content="width=device-width">
+			<title> 140 - Integration of neural networks in industrial process control adaptation logic of a run-out table controller for hot strip mills</title>
+		
+				
+		<meta name="twitter:description" content="Reference Offre 140    &nbsp;    The hot strip mill is the process where a hot-rolled coil is produced from a slab after being rolled multiple times in the rolling stands and then cooled with wate ..." />
+		<meta name="twitter:site" content="@ABG_Asso" />
+		<meta name="twitter:title" content=" 140 - Integration of neural networks in industrial process control adaptation logic of a run-out table controller for hot strip mills" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:widgets:csp" content="on" />
+		<meta name="twitter:creator" content="@ABG_Asso" />
+		<meta property="og:url" content="https://www.abg.asso.fr/fr/candidatOffres/show/id_offre/140502/job/140-integration-of-neural-networks-in-industrial-process-control-adaptation-logic-of-a-run-out-table-controller-for-hot-strip-mills" />
+		<meta property="og:title" content=" 140 - Integration of neural networks in industrial process control adaptation logic of a run-out table controller for hot strip mills" /> 
+		<meta property="og:description" content="Reference Offre 140    &nbsp;    The hot strip mill is the process where a hot-rolled coil is produced from a slab after being rolled multiple times in the rolling stands and then cooled with water using a run-out table to control the shape and the me ..." />
+		    	
+							<script type="text/javascript" src="https:////cdn.ckeditor.com/4.7.3/full/ckeditor.js"></script> 
+		<script type="text/javascript" src="/js/ckeditor/config.js"></script>
+	
+	
+	
+   <script type="text/javascript" src="/js/tarteaucitron/tarteaucitron.js"></script>
+
+        <script type="text/javascript">
+        tarteaucitron.init({
+	    "privacyUrl": "", /* Privacy policy url */
+
+	    "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+	    "cookieName": "tartaucitron", /* Cookie name */
+
+	    "orientation": "bottom", /* Banner position (top - bottom) */
+	    "showAlertSmall": true, /* Show the small banner on bottom right */
+	    "cookieslist": true, /* Show the cookie list */
+
+	    "adblocker": false, /* Show a Warning if an adblocker is detected */
+	    "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
+	    "highPrivacy": true, /* Disable auto consent */
+	    "handleBrowserDNTRequest": false, /* If Do Not Track == 1, accept all */
+    
+	    "removeCredit": false, /* Remove credit link */
+	    "moreInfoLink": true, /* Show more info link */
+
+	    //"cookieDomain": ".my-multisite-domaine.fr" /* Shared cookie for subdomain */
+        });
+    </script>
+    <script type="text/javascript">
+        (tarteaucitron.job = tarteaucitron.job || []).push('youtube');
+    </script>
+    <link rel="shortcut icon" href="/images/smart-icons/favicon.ico"/>
+	<link rel="icon" type="image/png" href="/images/smart-icons/favicon.png">
+<link rel="icon" sizes="192x192" href="/images/smart-icons/android-icon.png">
+<meta name="msapplication-square310x310logo" content="/images/smart-icons/microsoft-icon.png">
+<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/smart-icons/touch-icon-ipad.png">
+<link rel="apple-touch-icon" sizes="167x167" href="/images/smart-icons/touch-icon-ipad-retina.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/smart-icons/touch-icon-iphone-retina.png">	
+    <link rel="image_src" href="/image_facebook.jpg"/>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic' rel='stylesheet'
+          type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="/fr/css/traduction" />
+			
+<script type="text/javascript" src="/js/dummy.js"></script>
+<script type="text/javascript" src="/js/dummy2.js"></script>
+<script type="text/javascript" src="/js/overlib_mini.js"></script>
+<script type="text/javascript" src="/js/prototype.js"></script>
+<script type="text/javascript" src="/js/scriptaculous.js"></script>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-ui.1.10.4.js"></script>
+<script type="text/javascript" src="/js/jquery_noConflict.js"></script>
+<script type="text/javascript" src="/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="/js/jquery.tagSphere.js"></script>
+<script type="text/javascript" src="/js/jquery.zweatherfeed.js"></script>
+<script type="text/javascript" src="/js/jquery.zweatherfeed.min.js"></script>
+<script type="text/javascript" src="/sf/calendar/calendar.js"></script>
+<script type="text/javascript" src="/sf/calendar/lang/calendar-fr.js"></script>
+<script type="text/javascript" src="/sf/calendar/calendar-setup.js"></script>
+<script type="text/javascript" src="/js/Tree-optimized.js"></script>
+<script type="text/javascript" src="/js/password.js?key=1771874506"></script>
+<script type="text/javascript" src="/js/MD5.js"></script>
+<script type="text/javascript" src="/js/checkMaDate.js"></script>
+<script type="text/javascript" src="/js/detecterNavigateur.js"></script>
+<script type="text/javascript" src="/js/refuserToucheEntree.js"></script>
+<script type="text/javascript" src="/js/accessKey.js"></script>
+<script type="text/javascript" src="/js/annuaireGlobal.js"></script>
+<script type="text/javascript" src="/js/listeArticle.js"></script>
+<script type="text/javascript" src="/js/listeRubrique.js"></script>
+<script type="text/javascript" src="/js/fonctions_utiles.js"></script>
+<script type="text/javascript" src="/js/myTools.js"></script>
+<script type="text/javascript" src="/js/jquery.ui.touch.js"></script>
+<script type="text/javascript" src="/js/QapTcha.jquery.js"></script>
+<script type="text/javascript" src="/js/jquery.multiple.select.js"></script>
+<script type="text/javascript" src="/js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="/js/tinytools.toggleswitch.min.js"></script>
+<script type="text/javascript" src="/js/jquery-ui.multidatespicker.js"></script>
+<script type="text/javascript" src="/js/select2-4.0.3/dist/js/select2.min.js"></script>
+<script type="text/javascript" src="/js/select2-4.0.3/dist/js/i18n/fr.js"></script>
+<script type="text/javascript" src="/js/select2-4.0.3/dist/js/i18n/en.js"></script>
+<script type="text/javascript" src="/js/jquery.diaporama.js"></script>
+<script type="text/javascript" src="/js/script.js"></script>
+<script type="text/javascript" src="/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="/js/datatables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.html5.min.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="/css/offre.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/jquery-ui.css?date=1498556842" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/tree.css?date=1498556843" />
+<link rel="stylesheet" type="text/css" media="screen" href="/sf/calendar/skins/aqua/theme.css?date=1474533145" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/input_auto_complete_tag.css?date=1498556842" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/layout.css?date=1744386567" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css?date=1759910143" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/offre.css?date=1633710643" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/formation.css?date=1611231995" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/formulaire.css?date=1740735947" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/images.css?date=1632991500" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/nav.css?date=1771874510" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/radiobutton.css?date=1524491662" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/guideInternational.css?date=1649688928" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/themes.css?date=1551719652" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/admin.css?date=1547805511" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/responsive.css?date=1756455978" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/tab768.css?date=1740735947" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/tab640.css?date=1740735947" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/smart.css?date=1733750480" />
+<link rel="stylesheet" type="text/css" media="print" href="/css/print.css?date=1567672287" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/QapTcha.jquery.css?date=1498556842" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/multiple-select.css?date=1498556842" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/jquery.bxslider.css?date=1498556842" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/tinytools.toggleswitch.css?date=1498556842" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/select2.min.css?date=1498556842" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/jquery.dataTables_themeroller.css?date=1501678004" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/jquery.dataTables.css?date=1501678004" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/datatables.min.css?date=1501678004" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/ckeditor5.css?date=1721984513" />
+<link rel="stylesheet" type="text/css" media="screen" href="https://cdn.ckeditor.com/ckeditor5/42.0.2/ckeditor5.css" />
+</head>
+
+	
+				
+<body class="body candidatOffres                          public                          not_home                                                    s_recrut                                                    			 			                           ">
+
+<div class=" show v1">
+		
+	<header class="header clearfix">
+		<div class="head1">
+		<div class="logo"><a href="/fr/" title="logo"><img alt="logo" src="/images/logo.png" /></a></div>
+		<div class="phraseSite">Où docteurs et entreprises se rencontrent </div>
+				<div class="head_menus">
+			<div class="boxMenu box_menu">
+				<div class="bt btm bt_menu1">
+					<div class="textMenu">Menu</div>
+					<div class="icMenu"><span class="imgMenu img_menu1"></span></div>
+				</div>
+			</div><!-- fin box_menu -->
+			<div class="boxMenu box_user">
+									<div class="bt btm bt_user">
+						<div class="icMenu"><span class="imgMenu img_user"></span></div>
+						<div class="textMenu nom_prenom">Connexion</div>
+					</div>
+				
+						</div><!-- fin box_user -->
+
+
+			</div><!-- fin head_menus -->
+
+			<!-- Appel rs et recherche -->
+			<div class="head2">
+
+  <div class="bShare"></div>
+  <div class="rs clearfix">
+  	  			  	<a class="linkedin" target="_blank" href="https://www.linkedin.com/groups/4837744/profile" title="Linkedin">Linkedin</a>   <a class="facebook" target="_blank" href="https://www.facebook.com/ABG.Asso/" title="Facebook">Facebook</a>	<a class="youtube" target="_blank" href="https://www.youtube.com/channel/UC2KwFEvrToeEFDLCK7956CQ" title="Youtube">Youtube</a>  <a class="twitter" target="_blank" href="https://twitter.com/ABG_Asso" title="Twitter">Twitter</a>  </div>
+
+  <div class="langues">
+  	      		<a class="l_en" href="https://www.abg.asso.fr/en/candidatOffres/show/id_offre/140502/job/140-integration-of-neural-networks-in-industrial-process-control-adaptation-logic-of-a-run-out-table-controller-for-hot-strip-mills" title="&nbsp;">&nbsp;</a>       </div>
+</div>
+		</div><!-- fin head1 -->
+		<!--insert submenu--->
+		<div class="bgsubmenu">
+			<div class="navSub nav1">
+				<ul>
+					<li><a href="/fr/vue/l-abg" title="Qui sommes-nous ?">Qui sommes-nous ?</a></li>
+					<li><a href="/fr/user/inscriptionNewsletter" title="Infolettres">Infolettres</a></li>
+					<li><a href="/fr/article/activite-internationale-abg" title="L'international">L'international</a></li>
+					<li><a href="/fr/vue/abg-laboratoire-formation" title="La formation">La formation</a></li>
+					<li><a href="/fr/vue/recrutement" title="Le recrutement">Le recrutement</a></li>
+					<li><a href="/fr/article/121" title="Contactez-nous">Contactez-nous</a></li>
+				</ul>
+				</nav>
+			</div>
+			<!--fin insert submenu--->
+						<nav class="zone pop popMenu navi">
+								
+				<!-- greg, 25 avr. 12, refonte de la barre de gauche-->
+
+
+<div id="maRegion26" class="region_editoriale">
+           <div class="bloc   ">
+              <div class="titreBloc">
+          Vous êtes                  </div>
+            <div class="contenuBloc">
+          <ul class="navGestionEditoriale navGestionEditorialeVerticale">
+   
+           <li class="item_0" >    
+		
+                          <a href="/fr/vue/vous-etes-etudiant" title="Master ou ingénieur">Master ou ingénieur</a>                                               </li>   
+           <li class="item_0" >    
+		        </li>
+        <li class="item_1" >
+        
+                          <a href="/fr/vue/vous-etes-doctorant" title="Doctorant">Doctorant</a>                                               </li>   
+           <li class="item_1" >    
+		        </li>
+        <li class="item_2" >
+        
+                          <a href="/fr/vue/vous-etes-docteur" title="Docteur">Docteur</a>                                               </li>   
+           <li class="item_2" >    
+		        </li>
+        <li class="item_3" >
+        
+                          <a href="/fr/vue/vous-etes-entreprise-collectivite-association" title="Entreprise, collectivité, association…">Entreprise, collectivité, association…</a>                                               </li>   
+           <li class="item_3" >    
+		        </li>
+        <li class="item_4" >
+        
+                          <a href="/fr/vue/vous-etes-etablissement-enseignement-superieur-recherche" title="Établissement d'enseignement supérieur et de recherche">Établissement d'enseignement supérieur et de recherche</a>                                               </li>   
+          
+
+  </ul>
+      </div>
+    </div>
+         <div class="bloc m_actus  ">
+              <div class="titreBloc">
+          Actualités                  </div>
+            <div class="contenuBloc">
+          <ul class="navGestionEditoriale navGestionEditorialeVerticale">
+   
+           <li class="item_0" >    
+		
+                          <a href="/fr/vue/toutes-les-actualites" title="Toutes les actualités">Toutes les actualités</a>                                               </li>   
+           <li class="item_0" >    
+		        </li>
+        <li class="item_1" >
+        
+                          <a href="/fr/vue/actus-evenements" title="Événements">Événements</a>                                               </li>   
+           <li class="item_1" >    
+		        </li>
+        <li class="item_2" >
+        
+                          <a href="/fr/vue/actus-appels-a-candidatures" title="Appels à candidatures">Appels à candidatures</a>                                               </li>   
+           <li class="item_2" >    
+		        </li>
+        <li class="item_3" >
+        
+                          <a href="/fr/vue/actus-mobilite-internationale" title="Mobilité internationale">Mobilité internationale</a>                                               </li>   
+           <li class="item_3" >    
+		        </li>
+        <li class="item_4" >
+        
+                          <a href="/fr/vue/actus-formations" title="Formations">Formations</a>                                               </li>   
+           <li class="item_4" >    
+		        </li>
+        <li class="item_5" >
+        
+                          <a href="/fr/vue/actus-la-vie-de-l-abg" title="La vie de l'ABG">La vie de l'ABG</a>                                               </li>   
+           <li class="item_5" >    
+		        </li>
+        <li class="item_6" >
+        
+                          <a href="/fr/vue/revue-presse" title="Revue de presse">Revue de presse</a>                                               </li>   
+          
+
+  </ul>
+      </div>
+    </div>
+         <div class="bloc m_regard  ">
+              <div class="titreBloc">
+          Le regard de l'ABG                  </div>
+            <div class="contenuBloc">
+          <ul class="navGestionEditoriale navGestionEditorialeVerticale">
+   
+           <li class="item_0" >    
+		
+                          <a href="/fr/vue/regard-abg" title="Tous les articles">Tous les articles</a>                                               </li>   
+           <li class="item_0" >    
+		        </li>
+        <li class="item_1" >
+        
+                          <a href="/fr/regard-abg/parcours-metiers" title="Parcours et métiers">Parcours et métiers</a>                                               </li>   
+           <li class="item_1" >    
+		        </li>
+        <li class="item_2" >
+        
+                          <a href="/fr/regard-abg/coin-du-coach" title="Le coin du coach">Le coin du coach</a>                                               </li>   
+           <li class="item_2" >    
+		        </li>
+        <li class="item_3" >
+        
+                          <a href="/fr/regard-abg/conseils" title="Conseils">Conseils</a>                                               </li>   
+           <li class="item_3" >    
+		        </li>
+        <li class="item_4" >
+        
+                          <a href="/fr/regard-abg/enquetes-etudes" title="Enquêtes, études">Enquêtes, études</a>                                               </li>   
+           <li class="item_4" >    
+		        </li>
+        <li class="item_5" >
+        
+                          <a href="/fr/regard-abg/dossiers-thematiques" title="Dossiers thématiques">Dossiers thématiques</a>                                               </li>   
+           <li class="item_5" >    
+		        </li>
+        <li class="item_6" >
+        
+                          <a href="/fr/vue/archives" title="Archives">Archives</a>                                               </li>   
+          
+
+  </ul>
+      </div>
+    </div>
+         <div class="bloc m_recrut  active">
+              <div class="titreBloc">
+          Recrutement                  </div>
+            <div class="contenuBloc">
+          <ul class="navGestionEditoriale navGestionEditorialeVerticale">
+   
+           <li class="item_0" >    
+		
+                          <a href="/fr/vue/recrutement" title="Tous nos services">Tous nos services</a>                                               </li>   
+           <li class="item_0" >    
+		        </li>
+        <li class="item_1" >
+        
+                          <a href="/fr/article/publiez-vos-offres" title="Publier une offre">Publier une offre</a>                                               </li>   
+           <li class="item_1" >    
+		        </li>
+        <li class="item_2" >
+        
+                          <a href="/fr/recruteurCvs" title="Trouver des CV">Trouver des CV</a>                                               </li>   
+           <li class="item_2" >    
+		        </li>
+        <li class="item_3" >
+        
+                  <a href="https://www.abg.asso.fr/fr/article/1766/services-pour-le-recrutement-de-docteurs" title="Les services de recrutement">Les services de recrutement</a>                                                       </li>   
+           <li class="item_3" >    
+		        </li>
+        <li class="item_4" >
+        
+                          <a href="/fr/candidatOffres" title="Trouver une offre">Trouver une offre</a>                                               </li>   
+           <li class="item_4" >    
+		        </li>
+        <li class="item_5" >
+        
+                          <a href="/fr/espaceUser/listCv" title="Déposer un CV">Déposer un CV</a>                                               </li>   
+           <li class="item_5" >    
+		        </li>
+        <li class="item_6" >
+        
+                          <a href="/fr/vue/actus-appels-a-candidatures" title="Financements">Financements</a>                                               </li>   
+           <li class="item_6" >    
+		        </li>
+        <li class="item_7" >
+        
+                          <a href="/fr/article/sites-emploi-partenaires" title="Sites emploi partenaires">Sites emploi partenaires</a>                                               </li>   
+          
+
+  </ul>
+      </div>
+    </div>
+         <div class="bloc m_form  ">
+              <div class="titreBloc">
+          Formation                  </div>
+            <div class="contenuBloc">
+          <ul class="navGestionEditoriale navGestionEditorialeVerticale">
+   
+           <li class="item_0" >    
+		
+                          <a href="/fr/vue/abg-laboratoire-formation" title="L'ABG, laboratoire de formations">L'ABG, laboratoire de formations</a>                                               </li>   
+           <li class="item_0" >    
+		        </li>
+        <li class="item_1" >
+        
+                          <a href="https://www.abg.asso.fr/fr/vue/abg-laboratoire-formation" title="Catalogue de formations">Catalogue de formations</a>                                               </li>   
+           <li class="item_1" >    
+		        </li>
+        <li class="item_2" >
+        
+                          <a href="/fr/candidatFormation/indexSession" title="L'agenda des formations">L'agenda des formations</a>                                               </li>   
+           <li class="item_2" >    
+		        </li>
+        <li class="item_3" >
+        
+                          <a href="/fr/article/nos-outils-pour-vous-accompagner-en-ligne" title="Accompagnement en ligne">Accompagnement en ligne</a>                                               </li>   
+          
+
+  </ul>
+      </div>
+    </div>
+         <div class="bloc m_inter  ">
+              <div class="titreBloc">
+          International                  </div>
+            <div class="contenuBloc">
+          <ul class="navGestionEditoriale navGestionEditorialeVerticale">
+   
+           <li class="item_0" >    
+		
+                          <a href="/fr/vue/international" title="Tout l'international">Tout l'international</a>                                               </li>   
+           <li class="item_0" >    
+		        </li>
+        <li class="item_1" >
+        
+                          <a href="/fr/article/activite-internationale-abg" title="L'activité internationale de l'ABG">L'activité internationale de l'ABG</a>                                               </li>   
+           <li class="item_1" >    
+		        </li>
+        <li class="item_2" >
+        
+                          <a href="/fr/page/guideInternational" title="Guide de la mobilité par pays">Guide de la mobilité par pays</a>                                               </li>   
+           <li class="item_2" >    
+		        </li>
+        <li class="item_3" >
+        
+                          <a href="/fr/candidatOffres/list/international/1" title="Offres à l'international">Offres à l'international</a>                                               </li>   
+          
+
+  </ul>
+      </div>
+    </div>
+         <div class="bloc m_abg  ">
+              <div class="titreBloc">
+          L'ABG et son écosystème                  </div>
+            <div class="contenuBloc">
+          <ul class="navGestionEditoriale navGestionEditorialeVerticale">
+   
+           <li class="item_0" >    
+		
+                          <a href="/fr/vue/l-abg" title="Qui sommes-nous ?">Qui sommes-nous ?</a>                                               </li>   
+           <li class="item_0" >    
+		        </li>
+        <li class="item_1" >
+        
+                          <a href="/fr/article/2239" title="Adhérer à l'ABG">Adhérer à l'ABG</a>                                               </li>   
+           <li class="item_1" >    
+		        </li>
+        <li class="item_2" >
+        
+                          <a href="/fr/article/2761" title="L'équipe">L'équipe</a>                                               </li>   
+           <li class="item_2" >    
+		        </li>
+        <li class="item_3" >
+        
+                          <a href="https://www.abg.asso.fr/fr/article/1849/partenaires" title="Les partenaires">Les partenaires</a>                                               </li>   
+           <li class="item_3" >    
+		        </li>
+        <li class="item_4" >
+        
+                          <a href="/fr/annuaire" title="Le réseau de conseillers">Le réseau de conseillers</a>                                               </li>   
+           <li class="item_4" >    
+		        </li>
+        <li class="item_5" >
+        
+                          <a href="/fr/article/1967" title="Les clients">Les clients</a>                                               </li>   
+           <li class="item_5" >    
+		        </li>
+        <li class="item_6" >
+        
+                          <a href="/fr/article/1960" title="Le kit de communication">Le kit de communication</a>                                               </li>   
+           <li class="item_6" >    
+		        </li>
+        <li class="item_7" >
+        
+                          <a href="/fr/article/fr-ils-elles-t%C3%A9moignent-2041" title="Ils nous font confiance">Ils nous font confiance</a>                                               </li>   
+           <li class="item_7" >    
+		        </li>
+        <li class="item_8" >
+        
+                          <a href="/fr/regard-abg/bibliotheque" title="Textes officiels">Textes officiels</a>                                               </li>   
+           <li class="item_8" >    
+		        </li>
+        <li class="item_9" >
+        
+                          <a href="/fr/regard-abg/liens-utiles" title="Liens utiles">Liens utiles</a>                                               </li>   
+          
+
+  </ul>
+      </div>
+    </div>
+  </div>
+
+ <!-- FIN greg, 25 avr. 12, refonte de la barre de gauche-->			</nav>
+							<div class="zone pop popMenu popLog logbox">
+					<div class="int">
+<div class="log_choix">
+  <h2 class="zoneLogin active">Vous avez déjà un compte ?</h2>
+  <h2 class="zoneCreation">Nouvel utilisateur ?</h2>
+</div>
+
+<div id="zone_login">
+      
+  <form onSubmit="$('passCryptRapide').value = cryptPass( $('passwordRapide') , '21316A71005', 'sha1' );" method="post" action="/fr/user/login">  <input type="hidden" name="passCryptRapide" id="passCryptRapide" value="" />
+  <input type="text" name="loginRapide" id="loginRapide" value="" placeholder="Email" onKeyPress="" required="required" />
+  <input type="password" name="passwordRapide" id="passwordRapide" value="" placeholder="Mot de passe" onKeyPress="" required="required" />
+  <input type="submit" name="monBoutonDeConnexionRapide" value="Valider" class="submit_log" id="monBoutonDeConnexionRapide" />  <a class="pass_oubli" href="/fr/user/oubliMotdepasse" title="Mot de passe oublié">Mot de passe oublié</a>    
+</form>
+
+</div>
+<div id="zone_creation" style="display: none">
+  
+  <form onSubmit="$('email1').value = $('email1').value.trim();if(jQuery('#id_vous_etes').val()==0) {alert('Vous devez remplir le champ Vous êtes'); return false;} else {return true;}" method="post" action="/fr/user/updateMiniCreate">
+
+  
+
+    <table class="formulaire">
+      <tbody>
+        <tr>
+          <th>
+            <label for="id_vous_etes" >Vous êtes</label><span class="obli">*</span>
+          </th>
+          <td><div style="display:none;" class="form_error" id="error_for_id_vous_etes"> &darr;&nbsp; &nbsp;&darr;</div>
+            <select name="id_vous_etes" id="id_vous_etes"><option value=""></option>
+<option value="3">Docteur</option>
+<option value="2">Doctorant</option>
+<option value="4">Entreprise, Collectivité, Association</option>
+<option value="5">Etablissement d'enseignement supérieur et de recherche</option>
+<option value="1">Master ou ingénieur</option>
+</select>          </td>
+        </tr>
+                <tr>
+          <th>
+            <label for="email1" >E-mail</label><span class="obli">*</span>
+          </th>
+          <td>
+            <div style="display:none;" class="form_error" id="error_for_email1"> &darr;&nbsp; &nbsp;&darr;</div>
+            <input type="text" name="email1" id="email1" value="" oncopy="return false" />          </td>
+        </tr>
+              </tbody>
+    </table>
+
+    <div class="obli obligatoire">
+      Les champs marqués d'une astérisque (*) sont obligatoires    </div>
+
+
+
+
+  <input type="submit" name="commit" value="Créez votre compte" />
+</form>
+</div></div>
+				</div><!-- fin pop -->
+					</div>
+	</div>
+</header>
+
+
+
+
+	
+
+    <div class="main1">
+		
+					 
+ 
+
+ 		<div class="global smenu">
+            <div class="table">
+            	                 	               
+                		<a class="Btlc B55 bt_recrut" href="/fr/candidatOffres" title="Recrutement">Recrutement</a>           
+                	 
+	 			            </div>
+        </div>
+        
+        
+                                            
+  				
+        <div class="main clearfix">
+
+            <article class="contenu clearfix">
+                <div class="site ">
+
+					
+                        <div class="blocG">
+																						<div class="basePage recrutPage showPage offrePage">
+	
+	    
+    <div class="menu2 mImg">
+		<a class="Btl bt_retour" href="/fr/candidatOffres" title="Retourner à la recherche">Retourner à la recherche</a>				
+    </div>
+
+	<div class="offrePage">
+
+	
+	<h1>
+		 140 - Integration of neural networks in industrial process control adaptation logic of a run-out table controller for hot strip mills	</h1>
+
+	<table class="tab_offre_infos">
+		<tr>
+			<td>
+				<label>Réf</label>
+				<strong>ABG-140502</strong>
+			</td>
+			<td>
+				Stage master 2 / Ingénieur			</td>
+						<td>
+				<label>
+					Durée				</label>
+					6					mois			</td>
+						<td>
+				<label>
+					Salaire net mensuel				</label>
+				-			</td>
+		</tr>
+		<tr>
+			<td>12/10/2026</td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+
+
+	<div class="box">
+
+			<div class="box_societe">
+
+			
+			<div class="societe">
+				ArcelorMittal Global R&D Maizières			</div>
+
+			
+		</div>
+	
+		<div class="box_infosP">
+
+			<div class="item">
+				<label>
+					Lieu de travail				</label>
+				<div class="text infos">
+					Metz										Grand Est					France									</div>
+			</div>
+
+						<div class="item">
+				<label>
+					Champs scientifiques				</label>
+				<div class="text infos">
+					<ul>
+						<li>
+							Sciences de l’ingénieur						</li>
+												<li>
+							Informatique						</li>
+																		<li>
+							Numérique						</li>
+											</ul>
+				</div>
+			</div>
+			
+						<div class="item">
+				<label>
+					Mots clés				</label>
+				<div class="text infos">
+					Python programming skills, Knowedge on Machine Learning and neural network, Analytical and problem-solving abilities, Ability to communicate technical concepts and present results in a multidisciplinary environment, Autonomous, curious and willing to learn.				</div>
+			</div>
+			
+			
+					</div>
+		<!-- fin box_infosP -->
+	</div>
+	<!-- fin box -->
+
+	<div class="desc">
+
+			<div class="box">
+			<h2>
+				Établissement recruteur			</h2>
+
+						<div class="text">
+				<p><strong>Who are we</strong></p>
+
+<p><br />
+ArcelorMittal is one of the world&#39;s leading steel companies. Every day, its 154,000 employees in 60 countries help build a better world with smarter steels that consume less energy and emit less carbon.</p>
+
+<p><br />
+<strong>The Maizi&egrave;res campus</strong></p>
+
+<p><br />
+The Maizi&egrave;res campus is the group&#39;s largest R&amp;D site with more than 700 employees who work daily to make steel a cutting-edge product. Coming from the best academic backgrounds, its community of researchers, made up of more than 35 nationalities, designs and industrializes new products for the automotive, packaging and construction markets. To meet the group&#39;s ambitions, the decarbonization of steel production is now one of the main drivers of research carried out on the site.</p>
+			</div>
+
+		</div>
+	
+		<div class="box">
+			<h2>Description</h2>
+			<div class="text">
+				<p><u><strong>Reference Offre 140</strong></u></p>
+
+<p>&nbsp;</p>
+
+<p>The hot strip mill is the process where a hot-rolled coil is produced from a slab after being rolled multiple times in the rolling stands and then cooled with water using a run-out table to control the shape and the mechanical properties of the strip.<br />
+A run-out table is key process in hot rolling composed of water jets controlled by multiple valves to reach a desired temperature along the length of the product. R&amp;D developed an industrial water-cooling controller for run-out table based on temperature and metallurgical predictions.<br />
+<br />
+Temperature control is a key challenge in such manufacturing processes, where product quality strongly depends on the ability to accurately predict and regulate thermal behaviour under a wide range of operating conditions.<br />
+<br />
+Current run out table control systems rely on physical and mathematical models to predict process behaviour and determine optimal operating parameters. While these models provide robust and accurate predictions in most situations, their performance may decrease when operating outside their calibration domain or when confronted with atypical process conditions.<br />
+<br />
+The objective of this internship is to investigate and develop a hybrid modelling approach combining physical models and neural networks to improve the adaptation capabilities of the run out table controller. The work will consist in leveraging historical process data and existing adaptation mechanisms to enhance prediction accuracy and controller performance while maintaining the robustness required for industrial deployment.<br />
+<br />
+The activities of the mission will include:<br />
+<br />
+- Understanding the industrial process and the existing control strategy.<br />
+- Reviewing state-of-the-art machine learning approaches for industrial applications.<br />
+- Analysing historical process and production data.<br />
+- Developing and training neural network models in Python.<br />
+- Reusing and extending existing adaptation algorithms.<br />
+- Integrating machine learning models into the control adaptation workflow.<br />
+- Evaluating model performance through offline simulations and industrial case studies.<br />
+- Comparing conventional physical-model-based and hybrid AI-based approaches.<br />
+- Documenting developments and presenting results to the R&amp;D team.<br />
+<br />
+The training will be provided by a team of technicians and engineers in Maizi&egrave;res lab. Some contacts with ArcelorMittal Hot Strip Mills could be requested to gather information.<br />
+<br />
+The language of everyday communication is in French but reports and presentations will be in English. The internship offers the opportunity to combine data science, software development and industrial process understanding on a real-world application.</p>
+			</div>
+			<div class="text">
+							</div>
+		</div>
+
+		<div class="box">
+			<h2>
+				Profil			</h2>
+			<div class="text">
+				<p>Niveau d&#39;&eacute;tude: Bac+5 / Master<br />
+Domaine: Computer Science / Software Development<br />
+Data Science / AI / Image Processing<br />
+Mathematics / Statistics<br />
+Electronics / Mechatronics / Automation<br />
+Modeling / Simulation<br />
+Comp&eacute;tences: Python programming skills, Knowedge on Machine Learning and neural network, Analytical and<br />
+problem-solving abilities, Ability to communicate technical concepts and present results in a<br />
+multidisciplinary environment, Autonomous, curious and willing to learn.<br />
+Langues: English, French</p>
+			</div>
+
+			<h3>
+				Prise de fonction			</h3>
+			<div class="text">
+				Dès que possible			</div>
+		</div>
+
+
+
+			</div>
+
+
+
+
+</div><!-- AddThis Button BEGIN -->
+	<div class="rsOFFRES">
+											
+						<span class="labPartage">Partager via</span>
+			<a class="btRs bt_facebook" href="javascript:void(0)" onClick="window.open('https://www.facebook.com/dialog/share?app_id=140586622674265&display=popup&href=https%3A%2F%2Fwww.abg.asso.fr%2Ffr%2FcandidatOffres%2Fshow%2Fid_offre%2F140502%2Fjob%2F140-integration-of-neural-networks-in-industrial-process-control-adaptation-logic-of-a-run-out-table-controller-for-hot-strip-mills&title=+140+-+Integration+of+neural+networks+in+industrial+process+control+adaptation+logic+of+a+run-out+table+controller+for+hot+strip+mills&description=Reference+Offre+140%0D%0A%0D%0A%26nbsp%3B%0D%0A%0D%0AThe+hot+strip+mill+is+the+process+where+a+hot-rolled+coil+is+produced+from+a+slab+after+being+rolled+multiple+times+in+the+rolling+stands+and+then+cooled+with+water+using+a+run-out+table+to+control+the+shape+and+the+mechanical+properties+of+the+strip.%0D%0AA+run-out+table+is+key+process+in+hot+rolling+composed+of+water+jets+controlled+by+multiple+valves+to+reach+a+desired+temperature+along+the+length+of+the+product.+R%26amp%3BD+developed+an+industrial+water-cooling+controller+for+run-out+table+based+on+temperature+and+metallurgical+predictions.%0D%0A%0D%0ATemperature+control+is+a+key+challenge+in+such+manufacturing+processes%2C+where+product+quality+strongly+depends+on+the+ability+to+accurately+predict+and+regulate+thermal+behaviour+under+a+wide+range+of+operating+conditions.%0D%0A%0D%0ACurrent+run+out+table+control+systems+rely+on+physical+and+mathematical+models+to+predict+process+behaviour+and+determine+optimal+operating+parameters.+While+these+models+provide+robust+and+accurate+predictions+in+most+situations%2C+their+performance+may+decrease+when+operating+outside+their+calibration+domain+or+when+confronted+with+atypical+process+conditions.%0D%0A%0D%0AThe+objective+of+this+internship+is+to+investigate+and+develop+a+hybrid+modelling+approach+combining+physical+models+and+neural+networks+to+improve+the+adaptation+capabilities+of+the+run+out+table+controller.+The+work+will+consist+in+leveraging+historical+process+data+and+existing+adaptation+mechanisms+to+enhance+prediction+accuracy+and+controller+performance+while+maintaining+the+robustness+required+for+industrial+deployment.%0D%0A%0D%0AThe+activities+of+the+mission+will+include%3A%0D%0A%0D%0A-+Understanding+the+industrial+process+and+the+existing+control+strategy.%0D%0A-+Reviewing+state-of-the-art+machine+learning+approaches+for+industrial+applications.%0D%0A-+Analysing+historical+process+and+production+data.%0D%0A-+Developing+and+training+neural+network+models+in+Python.%0D%0A-+Reusing+and+extending+existing+adaptation+algorithms.%0D%0A-+Integrating+machine+learning+models+into+the+control+adaptation+workflow.%0D%0A-+Evaluating+model+performance+through+offline+simulations+and+industrial+case+studies.%0D%0A-+Comparing+conventional+physical-model-based+and+hybrid+AI-based+approaches.%0D%0A-+Documenting+developments+and+presenting+results+to+the+R%26amp%3BD+team.%0D%0A%0D%0AThe+training+will+be+provided+by+a+team+of+technicians+and+engineers+in+Maizi%26egrave%3Bres+lab.+Some+contacts+with+ArcelorMittal+Hot+Strip+Mills+could+be+requested+to+gather+information.%0D%0A%0D%0AThe+language+of+everyday+communication+is+in+French+but+reports+and+presentations+will+be+in+English.+The+internship+offers+the+opportunity+to+combine+data+science%2C+software+development+and+industrial+process+understanding+on+a+real-world+application.%0D%0A', 'share_facebook', 'width=500,height=300')"></a>
+	<a class="btRs bt_twitter" href="javascript:void(0)" onClick="window.open('https://twitter.com/intent/tweet?text=+140+-+Integration+of+neural+networks+in+industrial+process+control+adaptation+logic+of+a+run-out+table+controller+for+hot+strip+mills+%40+https%3A%2F%2Fwww.abg.asso.fr%2Ffr%2FcandidatOffres%2Fshow%2Fid_offre%2F140502%2Fjob%2F140-integration-of-neural-networks-in-industrial-process-control-adaptation-logic-of-a-run-out-table-controller-for-hot-strip-mills&href=https%3A%2F%2Fwww.abg.asso.fr%2Ffr%2FcandidatOffres%2Fshow%2Fid_offre%2F140502%2Fjob%2F140-integration-of-neural-networks-in-industrial-process-control-adaptation-logic-of-a-run-out-table-controller-for-hot-strip-mills', 'share_twitter', 'width=500,height=300')"></a>
+	<a class="btRs bt_linkedin" href="javascript:void(0)" onClick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.abg.asso.fr%2Ffr%2FcandidatOffres%2Fshow%2Fid_offre%2F140502%2Fjob%2F140-integration-of-neural-networks-in-industrial-process-control-adaptation-logic-of-a-run-out-table-controller-for-hot-strip-mills&title=+140+-+Integration+of+neural+networks+in+industrial+process+control+adaptation+logic+of+a+run-out+table+controller+for+hot+strip+mills&ro=false&summary=Reference+Offre+140%0D%0A%0D%0A%26nbsp%3B%0D%0A%0D%0AThe+hot+strip+mill+is+the+process+where+a+hot-rolled+coil+is+produced+from+a+slab+after+being+rolled+multiple+times+in+the+rolling+stands+and+then+cooled+with+water+using+a+run-out+table+to+control+the+shape+and+the+mechanical+properties+of+the+strip.%0D%0AA+run-out+table+is+key+process+in+hot+rolling+composed+of+water+jets+controlled+by+multiple+valves+to+reach+a+desired+temperature+along+the+length+of+the+product.+R%26amp%3BD+developed+an+industrial+water-cooling+controller+for+run-out+table+based+on+temperature+and+metallurgical+predictions.%0D%0A%0D%0ATemperature+control+is+a+key+challenge+in+such+manufacturing+processes%2C+where+product+quality+strongly+depends+on+the+ability+to+accurately+predict+and+regulate+thermal+behaviour+under+a+wide+range+of+operating+conditions.%0D%0A%0D%0ACurrent+run+out+table+control+systems+rely+on+physical+and+mathematical+models+to+predict+process+behaviour+and+determine+optimal+operating+parameters.+While+these+models+provide+robust+and+accurate+predictions+in+most+situations%2C+their+performance+may+decrease+when+operating+outside+their+calibration+domain+or+when+confronted+with+atypical+process+conditions.%0D%0A%0D%0AThe+objective+of+this+internship+is+to+investigate+and+develop+a+hybrid+modelling+approach+combining+physical+models+and+neural+networks+to+improve+the+adaptation+capabilities+of+the+run+out+table+controller.+The+work+will+consist+in+leveraging+historical+process+data+and+existing+adaptation+mechanisms+to+enhance+prediction+accuracy+and+controller+performance+while+maintaining+the+robustness+required+for+industrial+deployment.%0D%0A%0D%0AThe+activities+of+the+mission+will+include%3A%0D%0A%0D%0A-+Understanding+the+industrial+process+and+the+existing+control+strategy.%0D%0A-+Reviewing+state-of-the-art+machine+learning+approaches+for+industrial+applications.%0D%0A-+Analysing+historical+process+and+production+data.%0D%0A-+Developing+and+training+neural+network+models+in+Python.%0D%0A-+Reusing+and+extending+existing+adaptation+algorithms.%0D%0A-+Integrating+machine+learning+models+into+the+control+adaptation+workflow.%0D%0A-+Evaluating+model+performance+through+offline+simulations+and+industrial+case+studies.%0D%0A-+Comparing+conventional+physical-model-based+and+hybrid+AI-based+approaches.%0D%0A-+Documenting+developments+and+presenting+results+to+the+R%26amp%3BD+team.%0D%0A%0D%0AThe+training+will+be+provided+by+a+team+of+technicians+and+engineers+in+Maizi%26egrave%3Bres+lab.+Some+contacts+with+ArcelorMittal+Hot+Strip+Mills+could+be+requested+to+gather+information.%0D%0A%0D%0AThe+language+of+everyday+communication+is+in+French+but+reports+and+presentations+will+be+in+English.+The+internship+offers+the+opportunity+to+combine+data+science%2C+software+development+and+industrial+process+understanding+on+a+real-world+application.%0D%0A', 'share_linkedin', 'width=500,height=300')"></a>
+	
+				   		<!-- AddThis Button END -->
+	</div>
+	        <div class="box_postuler">
+			
+	<a class='bPop submit'>Postuler</a><div class="zone zPop">
+    <div class="popIn">
+        <div class="fermer">Fermer</div>
+		<div class="log_choix">
+  <h2 class="zoneLoginPopin active">Vous avez déjà un compte ?</h2>
+  <h2 class="zoneCreationPopin">Nouvel utilisateur ?</h2>
+</div>
+
+<div id="zone_login_popin">
+          
+  <form onSubmit="$('passCryptRapidePopin').value = cryptPass( $('passwordRapidePopin') , '21316A71005', 'sha1' );" method="post" action="/fr/user/login">  <input type="hidden" name="passCryptRapidePopin" id="passCryptRapidePopin" value="" />  <input type="hidden" name="saveForm" id="saveForm" value="" />  <input type="hidden" name="urlToSeePopin" id="urlToSeePopin" value="https://www.abg.asso.fr//fr/candidatOffres/show/id_offre/140502/job/140-integration-of-neural-networks-in-industrial-process-control-adaptation-logic-of-a-run-out-table-controller-for-hot-strip-mills" />
+  <input type="text" name="loginRapide" id="loginRapide" value="Identifiant" onfocus="if(this.value == 'Identifiant') {this.value = ''}" onblur="if(this.value == '') {this.value = 'Identifiant'}" onKeyPress="" />
+  <input type="password" name="passwordRapidePopin" id="passwordRapidePopin" value="xxxxxx" onfocus="if(this.value == 'xxxxxx') {this.value = ''}" onblur="if(this.value == '') {this.value = 'xxxxxx'}" onKeyPress="" />
+  <input type="submit" name="monBoutonDeConnexionRapide" value="Valider" class="submit_log" id="monBoutonDeConnexionRapide" />    <a class="pass_oubli" href="/fr/user/oubliMotdepasse" title="Mot de passe oublié">Mot de passe oublié</a>    
+</form>
+
+</div>
+<div id="zone_creation_popin" style="display: none">
+  
+  <form method="post" action="/fr/user/update">	<input type="hidden" name="urlToSeePopin" id="urlToSeePopin" value="https://www.abg.asso.fr//fr/candidatOffres/show/id_offre/140502/job/140-integration-of-neural-networks-in-industrial-process-control-adaptation-logic-of-a-run-out-table-controller-for-hot-strip-mills" />  	
+  <div class="item">
+
+    <table class="formulaire">
+      <tbody>
+        <tr>
+          <th>
+            <label for="user_civilite_id_civilite" >Civilité</label><span class="obli">*</span>
+          </th>
+          <td><div style="display:none;" class="form_error" id="error_for_user_civilite_id_civilite"> &darr;&nbsp; &nbsp;&darr;</div>
+            <select name="user_civilite_id_civilite" id="user_civilite_id_civilite"><option value=""></option>
+<option value="1">M.</option>
+<option value="2">Mme</option>
+</select>          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="prenom1" >Prénom</label><span class="obli">*</span>
+          </th>
+          <td><div style="display:none;" class="form_error" id="error_for_prenom1"> &darr;&nbsp; &nbsp;&darr;</div>
+            <input type="text" name="prenom1" id="prenom1" value="" class="id_input" />          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="nom_patronymique" >Nom</label><span class="obli">*</span>
+          </th>
+          <td><div style="display:none;" class="form_error" id="error_for_nom_patronymique"> &darr;&nbsp; &nbsp;&darr;</div>
+            <input type="text" name="nom_patronymique" id="nom_patronymique" value="" />          </td>
+        </tr>
+                <tr>
+          <th>
+            <label for="email1" >E-mail</label><span class="obli">*</span>
+          </th>
+          <td>
+            <div style="display:none;" class="form_error" id="error_for_email1"> &darr;&nbsp; &nbsp;&darr;</div>
+            <input type="text" name="email1" id="email1" value="" oncopy="return false" />          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="email1_confirm">Confirmez votre e-mail</label><span class="obli">*</span>
+          </th>
+          <td><div style="display:none;" class="form_error" id="error_for_email1_confirm"> &darr;&nbsp; &nbsp;&darr;</div>
+            <input type="text" name="email1_confirm" id="email1_confirm" value="" onpaste="return false" />          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="pass" >Mot de passe</label><span class="obli">*</span>
+          </th>
+          <td>
+            <div class="indic">  8 caractères minimum, avec au moins un chiffre, une lettre minuscule et une lettre majuscule.            </div>
+            <div style="display:none;" class="form_error" id="error_for_pass"> &darr;&nbsp; &nbsp;&darr;</div>
+            <input type="password" name="pass" id="pass" value="" maxlength="100" title=" 8 caractères minimum, avec au moins un chiffre, une lettre minuscule et une lettre majuscule." required="required" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="pass_confirm" >Confirmez votre mot de passe</label><span class="obli">*</span>
+          </th>
+          <td><div style="display:none;" class="form_error" id="error_for_pass_confirm"> &darr;&nbsp; &nbsp;&darr;</div>
+            <input type="password" name="pass_confirm" id="pass_confirm" value="" onpaste="return false" />          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="obli obligatoire">
+      Les champs marqués d'une astérisque (*) sont obligatoires    </div>
+
+
+  </div>
+
+  <input type="submit" name="commit" value="Créez votre compte" />
+</form>
+</div>    </div>
+</div>
+
+
+<script>
+    jQuery(".bPop").click(function()
+    {
+		    });
+</script>
+
+
+        </div>
+	
+
+</div>							                        </div>
+
+                        <div class="blocD">
+												
+							<div class="boxColD blocColD blocInscNewletter b21">
+								<h3>Vous souhaitez recevoir nos infolettres ?
+</h3>
+								
+								<div style="text-align: center;">
+																		<a href="/fr/user/inscriptionNewsletter" class="submit subCarre">Inscrivez-vous</a>
+																	</div>
+								
+							</div>
+									
+							<div class="boxColD boxHomeDiapo blocAdherant ">
+	 <h3>
+		 <a href="/fr/article/2239">
+			 				Découvrez nos adhérents
+					 </a>
+	</h3>
+	
+			
+			<ul class="diapo">
+		<li><a href='/fr/entreprise/ficheEntreprise/id_entreprise/4567'><img alt="ADEME" src="/images/cache/150_adbc5d54801456363bb6626f9631f2ff0c8a3697.png" /><span class='textF'>ADEME</span> </a></li><li><a href='/fr/entreprise/ficheEntreprise/id_entreprise/121948'><img alt="ONERA - The French Aerospace Lab" src="/images/cache/150_8f79d4b801054d3fb83f83b5031bc33df2782bcb.jpg" /><span class='textF'>ONERA - The French Aerospace Lab</span> </a></li><li><a href='/fr/entreprise/ficheEntreprise/id_entreprise/101701'><img alt="Laboratoire National de Métrologie et d'Essais - LNE" src="/images/cache/150_f8c6d1b041dce7b9a9a9b19a1a17d2cc9512aba8.jpg" /><span class='textF'>Laboratoire National de Métrologie et d'Essais - LNE</span> </a></li><li><a href='/fr/entreprise/ficheEntreprise/id_entreprise/99460'><img alt="Institut Sup'biotech de Paris" src="/images/cache/150_16e4b75ec8187b2a3ac4adaade590b3e74334ff9.jpg" /><span class='textF'>Institut Sup'biotech de Paris</span> </a></li><li><a href='/fr/entreprise/ficheEntreprise/id_entreprise/127732'><img alt="Nantes Université" src="/images/cache/150_d6e93e3ee46e61614739b7b52356aeccd9c19e5f.jpg" /><span class='textF'>Nantes Université</span> </a></li><li><a href='/fr/entreprise/ficheEntreprise/id_entreprise/125264'><img alt="TotalEnergies" src="/images/cache/150_0318c3a1dd2d4396f4694c9256459895e74461f8.jpg" /><span class='textF'>TotalEnergies</span> </a></li><li><a href='/fr/entreprise/ficheEntreprise/id_entreprise/117794'><img alt="Ifremer" src="/images/cache/150_c3d9628c4b436c741f46585dfd6e030a1ec010cf.jpg" /><span class='textF'>Ifremer</span> </a></li><li><a href='/fr/entreprise/ficheEntreprise/id_entreprise/100220'><img alt="Servier" src="/images/cache/150_d3540e72c667ed8d62e5c359d179f74c7a1f61be.jpg" /><span class='textF'>Servier</span> </a></li><li><a href='/fr/entreprise/ficheEntreprise/id_entreprise/89394'><img alt="Medicen Paris Region" src="/images/cache/150_cb7f424155a56078bf25b4fe1fbdf94ecf30c969.jpg" /><span class='textF'>Medicen Paris Region</span> </a></li><li><a href='/fr/entreprise/ficheEntreprise/id_entreprise/19189'><img alt="SUEZ" src="/images/cache/150_60642cbbabaf20dc27d2140e2a4b186e08d59f4e.jpg" /><span class='textF'>SUEZ</span> </a></li><li><a href='/fr/entreprise/ficheEntreprise/id_entreprise/115131'><img alt="Aérocentre, Pôle d'excellence régional" src="/images/cache/150_4e84d6577e6384bd47b498df8982734b13e11d8e.png" /><span class='textF'>Aérocentre, Pôle d'excellence régional</span> </a></li><li><a href='/fr/entreprise/ficheEntreprise/id_entreprise/123980'><img alt="Groupe AFNOR - Association française de normalisation" src="/images/cache/150_eb51639f43d927471f8d3b9fabc5b27874e2ebe5.png" /><span class='textF'>Groupe AFNOR - Association française de normalisation</span> </a></li><li><a href='/fr/entreprise/ficheEntreprise/id_entreprise/99386'><img alt="ASNR - Autorité de sûreté nucléaire et de radioprotection - Siège" src="/images/cache/150_1cf0587b3b50d2ed24d5f9dbacd25635b2ed2cb5.jpg" /><span class='textF'>ASNR - Autorité de sûreté nucléaire et de radioprotection - Siège</span> </a></li><li><a href='/fr/entreprise/ficheEntreprise/id_entreprise/118238'><img alt="ANRT" src="/images/cache/150_fe9ebb66cc7df62754387bcc13b2a9db30c51396.jpg" /><span class='textF'>ANRT</span> </a></li><li><a href='/fr/entreprise/ficheEntreprise/id_entreprise/105908'><img alt="Tecknowmetrix" src="/images/cache/150_38197a86be6022995a08742fa9b1f3d821b8a4dc.jpg" /><span class='textF'>Tecknowmetrix</span> </a></li><li><a href='/fr/entreprise/ficheEntreprise/id_entreprise/112642'><img alt="Généthon" src="/images/cache/150_de567128d39ae8a4efb2e4dfdf9ec23f267e0a3d.jpg" /><span class='textF'>Généthon</span> </a></li><li><a href='/fr/entreprise/ficheEntreprise/id_entreprise/113935'><img alt="Nokia Bell Labs France" src="/images/cache/150_7251f01c84f3b5e03c69a359a07aa3f50f4d4ed6.jpg" /><span class='textF'>Nokia Bell Labs France</span> </a></li></ul>		</div>																					<div class="boxColD boxHomeDiapo boxPubHome boxPub1">
+                                <ul class="diapoPub diapo">
+									                                        <li><a href="/fr/page/adRedirect/id/478" target="_blank"><img src="/uploads/5ef3d5c7caeae530dae69eac71d9918c4182667c.png" alt="item1"/></a></li>
+									                                        <li><a href="/fr/page/adRedirect/id/479" target="_blank"><img src="/uploads/7ba9ceae364264cc9b627772bcd4f0083137be0e.png" alt="item1"/></a></li>
+									                                </ul>
+							</div>
+							
+							
+														                                <div class="boxColD boxHomeDiapo boxPubHome boxPub2">
+									<ul class="diapoPub diapo">
+									                                        <li><a href="/fr/page/adRedirect/id/471" target="_blank"><img src="/uploads/33e56378075b9784e44846b817746d578215ee0f.png" alt="item1"/></a></li>
+									                                        <li><a href="/fr/page/adRedirect/id/472" target="_blank"><img src="/uploads/f0e837f3da9c2da6408f0fcd9cad1e9727546607.png" alt="item1"/></a></li>
+									                                        <li><a href="/fr/page/adRedirect/id/473" target="_blank"><img src="/uploads/d96e46a2a566bd81387bfe0db43b73f23803b60a.png" alt="item1"/></a></li>
+									                                </ul>
+							</div>
+														
+							
+					<a class="boxColD  blocTemoignages" href="/fr/article/2041" title="Ils nous font confiance">Ils nous font confiance</a>                        </div><!-- fin blocD -->
+										
+                </div>
+            </article>
+
+			<div class="selectionBox">
+                    <select id="jumpMenu">
+                                            <option value="" disabled selected>Vous êtes</option>
+                        <option value="/fr/vue/vous-etes-etudiant">Master ou ingénieur</option>
+                        <option value="/fr/vue/vous-etes-doctorant">Doctorant</option>
+                        <option value="/fr/vue/vous-etes-docteur">Docteur</option>
+                        <option value="/fr/vue/vous-etes-entreprise-collectivite-association">Entreprise, collectivité, association</option>
+                        <option value="/fr/vue/vous-etes-etablissement-enseignement-superieur-recherche">Etablissement d'enseignement supérieur et de recherche</option>
+                                        </select>
+                    <script>
+                    jQuery('#jumpMenu').change( function() {
+                    	document.location.href =jQuery(this).val() ;
+                    });
+                    </script>
+                    <div id="recherche" class="box_rech">
+						<form class="colg_form" method="post" action="/fr/menus/rechercheGlobale">						<input type="text" name="recherche_globale" id="recherche_globale" value="" onclick="value=''" onblur="if(this.value == '') {this.value = Recherche}" />						<input type="submit" name="commit" value="Rechercher" class="submit_search" />                        </form>
+                    </div><!-- fin rech -->
+             </div><!-- fin selection -->        </div><!-- fin main -->
+        <footer class="footer clearfix">
+
+            <div class="bt btSmart bt_menu_bas"></div>
+            <div class="Dsmart menu_bas">
+				<a href="/fr/" title="© ABG 2026">© ABG 2026</a>				
+     
+	    	    	 
+	    		<a href="/fr/article/49/49-fr-mentions-legales" title="Mentions légales">Mentions légales</a>	     		            
+			<a href="/fr/espaceUser/charte" title="Charte d'utilisation">Charte d'utilisation</a>            
+            <a href='/js/kcfinder/upload/files/CGV/CONDITIONS_GENERALES_DE_VENTE_ABG.pdf' target='_blank'>Conditions Générales de Vente</a>
+           
+            <a href="/fr/article/2192/faq" title="FAQ">FAQ</a>            
+           	<a target="_blank" href="http://www.anakrys.fr" title="Réalisation Anakrys">Réalisation Anakrys</a>            </div><!-- fin menu_bas -->
+
+            <div class="logo_ministere">
+                <span>Soutenue par</span>
+                <a href="http://www.enseignementsup-recherche.gouv.fr/" target="_blank"><div class="logo_m"></div></a>
+            </div>
+			<div class="head2">
+
+  <div class="bShare"></div>
+  <div class="rs clearfix">
+  	  			  	<a class="linkedin" target="_blank" href="https://www.linkedin.com/groups/4837744/profile" title="Linkedin">Linkedin</a>   <a class="facebook" target="_blank" href="https://www.facebook.com/ABG.Asso/" title="Facebook">Facebook</a>	<a class="youtube" target="_blank" href="https://www.youtube.com/channel/UC2KwFEvrToeEFDLCK7956CQ" title="Youtube">Youtube</a>  <a class="twitter" target="_blank" href="https://twitter.com/ABG_Asso" title="Twitter">Twitter</a>  </div>
+
+  <div class="langues">
+  	      		<a class="l_en" href="https://www.abg.asso.fr/en/candidatOffres/show/id_offre/140502/job/140-integration-of-neural-networks-in-industrial-process-control-adaptation-logic-of-a-run-out-table-controller-for-hot-strip-mills" title="&nbsp;">&nbsp;</a>       </div>
+</div>
+        </footer>
+
+
+    </div><!-- fin main1 -->
+</div><!-- FIN global -->
+<script type="text/javascript" src="/js/script_diaporama.js"></script>
+<script type="text/javascript" charset="utf-8">
+    jQuery(document).ready(function () {
+        jQuery("a[rel^='prettyPhoto']").prettyPhoto();
+    });
+</script>
+<div class="overlay" id="overlay" style="display:none;"></div>
+<div class="overlay2" style="display:none;"></div>
+<div class="overlayMenu" style="display:none;"></div>
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://statistiques.anasiege.net/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '52']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+ <!--  sécurité -->
+ <script type="text/javascript" charset="utf-8">
+    jQuery(document).ready(function () {
+    	if (top.location != location) {
+    		top.location.href = document.location.href ;
+    	}
+    });
+</script>
+ <!--  /sécurité -->
+</body>
+</html>
+  

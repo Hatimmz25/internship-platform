@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>EURES Job Vacancies - AI &amp; Data Science</title>
+    <link>https://ec.europa.eu/eures</link>
+    <description>Latest End of Studies (PFE) Internships in Artificial Intelligence and Data Science</description>
+    <item>
+      <title>PFE - Machine Learning Engineer Intern</title>
+      <link>https://ec.europa.eu/eures/portal/jv-se/job-opening/123456</link>
+      <guid>123456</guid>
+      <description>We are looking for a final year master student for a PFE internship in Machine Learning and Python. Remote options available in Europe.</description>
+      <pubDate>Fri, 09 Oct 2026 10:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Data Engineering Internship (End of Studies)</title>
+      <link>https://ec.europa.eu/eures/portal/jv-se/job-opening/123457</link>
+      <guid>123457</guid>
+      <description>End-of-studies internship for Data Science and SQL pipeline engineering in Paris, France.</description>
+      <pubDate>Fri, 09 Oct 2026 12:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
